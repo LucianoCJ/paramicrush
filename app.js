@@ -28,3 +28,16 @@ btnSi.addEventListener('click', function(e){
     //Paro el video.
     video.pause();
 });
+
+//Crea varios patricios con los clics.
+divModoSexo.addEventListener('clic', function(e){
+    const img = document.createElement("img");
+    img.src ="img\patricio.jpg";
+   
+    divModoSexo.appendChild(img);
+});
+
+window.addEventListener("beforeunload" , (event) => {
+    event.preventDefault();
+    event.returnValue = "";
+});
